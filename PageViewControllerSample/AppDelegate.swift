@@ -12,7 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    //전역변수(객체)를 선언해서 앱 전체에세 사용 가능함.(어디서나 갖다 쓸수 있는 것들을 정의..)
+    var mainVC:ViewController? = nil
+    var pageVC:MyPageViewController? = nil
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
