@@ -26,6 +26,9 @@
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-ch-suS">
                                 <rect key="frame" x="10" y="430" width="394" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Hh8-Zk-8mv"/>
+                                </constraints>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,6 +38,7 @@
                             <constraint firstItem="efq-zH-N2x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3le-rS-Uk3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfM-ch-suS" secondAttribute="trailing" constant="10" id="CHa-wf-PJJ"/>
                             <constraint firstItem="efq-zH-N2x" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="GB7-Tn-nlg"/>
+                            <constraint firstItem="nfM-ch-suS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egV-em-2vD"/>
                             <constraint firstItem="nfM-ch-suS" firstAttribute="top" secondItem="efq-zH-N2x" secondAttribute="bottom" constant="-72" id="hhR-Vj-YWf"/>
                             <constraint firstItem="efq-zH-N2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="le1-b8-zAS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efq-zH-N2x" secondAttribute="trailing" constant="10" id="wO4-oN-wlH"/>
@@ -82,7 +86,7 @@
         <scene sceneID="UqV-d7-wa6">
             <objects>
                 <viewController storyboardIdentifier="secondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="viQ-BB-8cd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K2F-Af-ZBg">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="K2F-Af-ZBg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.27846609999999999" green="1" blue="0.25313124110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -97,7 +101,7 @@
         <scene sceneID="e3V-iC-XUC">
             <objects>
                 <viewController storyboardIdentifier="thirdVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eZm-sx-ju1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qFK-ua-Crf">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="qFK-ua-Crf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.17858746789999999" green="0.28861735799999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

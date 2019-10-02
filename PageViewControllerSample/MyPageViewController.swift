@@ -2,6 +2,14 @@ import UIKit
 
 class MyPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if completed == true {
+            let currentTag = pageViewController.viewControllers!.first!.view.tag
+            print( currentTag )
+        }
+    }
+    
     //Delegate : 전달자(이벤트 전달자)
     //lazy변수 : 선언시에 메모리 할당을(인스턴스 생성) 하지 않고,
     //          참조시에 (Read, write 시) 메모리 할당을 함.
@@ -28,6 +36,7 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDelegate, 
         
 //        self.dataSource = self as! UIPageViewControllerDataSource
         self.dataSource = self
+        self.delegate = self
         
         if let firstVC = viewControllerList.first {
             self.setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
