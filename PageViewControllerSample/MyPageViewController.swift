@@ -34,6 +34,9 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.pageVC = self
+        
 //        self.dataSource = self as! UIPageViewControllerDataSource
         self.dataSource = self
         self.delegate = self
