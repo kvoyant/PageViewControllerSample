@@ -7,6 +7,9 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDelegate, 
         if completed == true {
             let currentTag = pageViewController.viewControllers!.first!.view.tag
             print( currentTag )
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.mainVC?.pageControl.currentPage = currentTag
         }
     }
     
