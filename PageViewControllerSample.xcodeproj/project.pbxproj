@@ -12,6 +12,7 @@
 		1895290A23449E04006014BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895290823449E04006014BA /* Main.storyboard */; };
 		1895290C23449E05006014BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1895290B23449E05006014BA /* Assets.xcassets */; };
 		1895290F23449E05006014BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895290D23449E05006014BA /* LaunchScreen.storyboard */; };
+		189529172344AE09006014BA /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189529162344AE09006014BA /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1895290B23449E05006014BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1895290E23449E05006014BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1895291023449E05006014BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189529162344AE09006014BA /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1895290423449E04006014BA /* AppDelegate.swift */,
 				1895290623449E04006014BA /* ViewController.swift */,
 				1895290823449E04006014BA /* Main.storyboard */,
+				189529162344AE09006014BA /* MyPageViewController.swift */,
 				1895290B23449E05006014BA /* Assets.xcassets */,
 				1895290D23449E05006014BA /* LaunchScreen.storyboard */,
 				1895291023449E05006014BA /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1895290723449E04006014BA /* ViewController.swift in Sources */,
+				189529172344AE09006014BA /* MyPageViewController.swift in Sources */,
 				1895290523449E04006014BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
