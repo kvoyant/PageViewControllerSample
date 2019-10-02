@@ -16,6 +16,12 @@ class MyPageViewController: UIPageViewController, UIPageViewControllerDelegate, 
 
         return [vc1, vc2, vc3]
     }().self
+    
+    required init?(coder: NSCoder) {
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+//        super.init(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
