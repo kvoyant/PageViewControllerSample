@@ -24,16 +24,26 @@
                                     <segue destination="3yr-rb-CRc" kind="embed" id="6v8-Ex-ktB"/>
                                 </connections>
                             </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-ch-suS">
+                                <rect key="frame" x="10" y="430" width="394" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="efq-zH-N2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="K6p-FL-SKF"/>
-                            <constraint firstItem="efq-zH-N2x" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="PX0-06-gw3"/>
-                            <constraint firstItem="efq-zH-N2x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gIf-wh-UJq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efq-zH-N2x" secondAttribute="trailing" constant="10" id="ghi-gp-3yQ"/>
+                            <constraint firstItem="nfM-ch-suS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="2Rk-km-I1B"/>
+                            <constraint firstItem="efq-zH-N2x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="38a-Zm-LuO"/>
+                            <constraint firstItem="efq-zH-N2x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3le-rS-Uk3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nfM-ch-suS" secondAttribute="trailing" constant="10" id="CHa-wf-PJJ"/>
+                            <constraint firstItem="efq-zH-N2x" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="GB7-Tn-nlg"/>
+                            <constraint firstItem="nfM-ch-suS" firstAttribute="top" secondItem="efq-zH-N2x" secondAttribute="bottom" constant="-72" id="hhR-Vj-YWf"/>
+                            <constraint firstItem="efq-zH-N2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="le1-b8-zAS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efq-zH-N2x" secondAttribute="trailing" constant="10" id="wO4-oN-wlH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="nfM-ch-suS" id="Len-k6-uA8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
